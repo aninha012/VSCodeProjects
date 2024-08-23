@@ -6,8 +6,8 @@ Estrutura do Projeto
 
 O projeto é dividido em duas classes principais:
 
-1. Classe Conta: Implementa os atributos e métodos necessários para gerenciar uma conta bancária.
-2. Classe Principal: Contém o método main que interage com o usuário, permitindo que ele realize operações na conta.
+- Classe Conta: Implementa os atributos e métodos necessários para gerenciar uma conta bancária.
+-  Classe Principal: Contém o método main que interage com o usuário, permitindo que ele realize operações na conta.
 
 Classe Conta
 
@@ -28,7 +28,7 @@ Métodos da Classe Conta
 Classe Principal
 
 A classe Principal contém o método main, que realiza as seguintes funções:
-2. Instancia um objeto da classe Conta.
-3. Interage com o usuário em um loop, permitindo que ele escolha entre realizar um crédito, um débito ou sair do aplicativo.
-4. Atualiza o saldo da conta após cada operação e exibe as informações da conta.
-5. O loop é encerrado quando o usuário decide não realizar mais transações.
+- Instancia um objeto da classe Conta.
+- Interage com o usuário em um loop, permitindo que ele escolha entre realizar um crédito, um débito ou sair do aplicativo.
+- Atualiza o saldo da conta após cada operação e exibe as informações da conta.
+- O loop é encerrado quando o usuário decide não realizar mais transações.
