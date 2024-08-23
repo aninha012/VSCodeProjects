@@ -11,7 +11,7 @@ O projeto é dividido em duas classes principais:
 
 Classe Conta
 
-- A classe Conta possui os seguintes atributos:
+A classe Conta possui os seguintes atributos:
 - numConta: Número da conta (tipo int).
 - nomeCliente: Nome do cliente (tipo String).
 - saldo: Saldo atual da conta (tipo double).
@@ -26,6 +26,7 @@ Métodos da Classe Conta
 - exibirInformacoes(): Exibe os detalhes da conta.
 
 Classe Principal
+
 A classe Principal contém o método main, que realiza as seguintes funções:
 2. Instancia um objeto da classe Conta.
 3. Interage com o usuário em um loop, permitindo que ele escolha entre realizar um crédito, um débito ou sair do aplicativo.
