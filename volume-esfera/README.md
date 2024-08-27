@@ -2,7 +2,7 @@ Descrição
 
 Este aplicativo tem como objetivo calcular o volume de uma esfera com base no raio fornecido pelo usuário. A fórmula utilizada para calcular o volume da esfera é:
 
-Volume = 4/3 × 𝜋 × 𝑅^3
+ $\text{Volume} = \frac{4}{3} \times \pi \times R^3$.
  
 Funcionalidades
 
