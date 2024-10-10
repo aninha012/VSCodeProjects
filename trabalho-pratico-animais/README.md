@@ -2,7 +2,48 @@
 
 ## Descrição
 
-Este projeto é um sistema simples para gerenciar informações sobre cães e gatos. O usuário pode criar instâncias de cães e gatos, realizar ações como fazer aniversário, latir, miar, vigiar, relaxar, e subir ou descer do muro. O sistema foi desenvolvido em Java e utiliza conceitos de orientação a objetos.
+Este projeto é um sistema simples para gerenciar informações sobre cães e gatos, utilizando herança. O usuário pode criar instâncias de animais, especificamente cães e gatos, e realizar ações como fazer aniversário, latir, miar, vigiar, relaxar, e subir ou descer do muro. O sistema foi desenvolvido em Java e utiliza conceitos de orientação a objetos.
+
+## Estrutura do Código
+
+O código é dividido em várias classes:
+
+1. **Classe `Animal`**
+   - **Atributos:**
+     - `nome`: Nome do animal.
+     - `vivo`: Estado de vida do animal (booleano).
+     - `idade`: Idade do animal (inteiro).
+   - **Métodos:**
+     - `morrer()`: Torna o animal não vivo.
+     - `fazerAniversário()`: Incrementa a idade se o animal estiver vivo.
+     - `isVivo()`: Retorna o estado de vida do animal.
+     - `toString()`: Retorna uma representação textual do animal.
+
+2. **Classe `Mamífero` (herda de `Animal`)**
+   - **Atributos:**
+     - `tutor`: Nome do tutor do mamífero.
+   - **Métodos:**
+     - Construtor que inicializa o nome e o tutor, definindo o estado de vida como verdadeiro.
+     - `toString()`: Retorna uma representação textual do mamífero, incluindo informações sobre o tutor.
+
+3. **Classe `Cão` (herda de `Mamífero`)**
+   - **Atributos:**
+     - `vigiando`: Estado de vigilância (booleano).
+   - **Métodos:**
+     - `latir()`: Emite um som (Au, Au!) se o cão estiver vivo.
+     - `vigiar()`: Coloca o cão em modo de vigilância.
+     - `relaxar()`: Faz o cão parar de vigiar.
+
+4. **Classe `Gato` (herda de `Mamífero`)**
+   - **Atributos:**
+     - `noMuro`: Estado no muro (booleano).
+   - **Métodos:**
+     - `miar()`: Emite um som (Miau, Miau!) se o gato estiver vivo.
+     - `subirMuro()`: Faz o gato subir no muro.
+     - `descerMuro()`: Faz o gato descer do muro.
+
+5. **Classe `PrincipalAnimal`**
+   - Classe responsável pela interação com o usuário através de um menu interativo que permite executar as funcionalidades descritas.
 
 ## Funcionalidades
 
@@ -18,44 +59,20 @@ Este projeto é um sistema simples para gerenciar informações sobre cães e ga
 - **Morrer**: Permite ao usuário "matar" o animal, tornando-o não mais vivo.
 - **Exibir Estado dos Animais**: Mostra as informações atuais dos cães e gatos criados.
 
-## Estrutura do Código
-
-O código é dividido em duas classes principais para os animais:
-
-1. **Cão**
-   - Atributos:
-     - `nome`: Nome do cão.
-     - `tutor`: Nome do tutor do cão.
-     - `vivo`: Estado de vida do cão (booleano).
-     - `idade`: Idade do cão (inteiro).
-     - `vigiando`: Estado de vigilância (booleano).
-   - Métodos:
-     - `morrer()`, `fazerAniversário()`, `latir()`, `vigiar()`, `relaxar()`, `toString()`.
-
-2. **Gato**
-   - Atributos:
-     - `nome`: Nome do gato.
-     - `tutor`: Nome do tutor do gato.
-     - `vivo`: Estado de vida do gato (booleano).
-     - `idade`: Idade do gato (inteiro).
-     - `noMuro`: Estado no muro (booleano).
-   - Métodos:
-     - `morrer()`, `fazerAniversário()`, `miar()`, `subirMuro()`, `descerMuro()`, `toString()`.
-
-3. **PrincipalAnimal**
-   - Classe responsável pela interação com o usuário através de um menu interativo que permite executar as funcionalidades descritas.
-
 ## Como Executar
 
 1. Certifique-se de ter o Java instalado em seu sistema.
 2. Clone ou baixe este repositório para sua máquina local.
 3. Compile as classes usando um terminal ou prompt de comando:
    ```bash
-   javac Principal.java
+   javac TesteAnimais.java
    ```
 4. Execute a classe principal:
    ```bash
-   java Principal
+   java TesteAnimais
    ```
 5. Siga as instruções no menu para interagir com os animais.
 
+## Contribuições
+
+Sinta-se à vontade para contribuir com melhorias ou novas funcionalidades! Para isso, você pode abrir uma issue ou enviar um pull request.
