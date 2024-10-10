@@ -65,11 +65,11 @@ O código é dividido em várias classes:
 2. Clone ou baixe este repositório para sua máquina local.
 3. Compile as classes usando um terminal ou prompt de comando:
    ```bash
-   javac TesteAnimais.java
+   javac PricipalAnimal.java
    ```
 4. Execute a classe principal:
    ```bash
-   java TesteAnimais
+   java PrincipalAnimal
    ```
 5. Siga as instruções no menu para interagir com os animais.
 
